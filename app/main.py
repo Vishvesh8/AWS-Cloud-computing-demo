@@ -18,7 +18,7 @@ router = APIRouter()
 app = FastAPI()
 
 
-@router.get('/')
+@app.get('/')
 async def root():
     return "Welcome to AWS Cloud computing demo!"
 
@@ -28,7 +28,7 @@ import spacy
 
 nlp = spacy.load("en_core_web_sm")
 
-@router.post('/named-entity-recognition/')
+@app.post('/named-entity-recognition/')
 async def ner(data: ner_data):
     doc = nlp(data.text)
     return_string = ""
