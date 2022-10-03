@@ -5,12 +5,12 @@ on:
     branches: [ main ]
 
 env:
-  EB_PACKAGE_S3_BUCKET_NAME : "workshop-aws-bucket"
-  EB_APPLICATION_NAME       : "PythonApp"
-  EB_ENVIRONMENT_NAME       : "Pythonappenv"
+  EB_PACKAGE_S3_BUCKET_NAME : "clevrly-math-bucket"
+  EB_APPLICATION_NAME       : "ClevrlyMath"
+  EB_ENVIRONMENT_NAME       : "Clevrlymath-env-2"
   DEPLOY_PACKAGE_NAME       : "docker-compose.prod.yml"
   DOCKER_TAG                : "vbhat8/prod"
-  AWS_REGION_NAME           : "us-east-1"
+  AWS_REGION_NAME           : "us-east-2"
 
 
 jobs:
